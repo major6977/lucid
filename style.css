@@ -39,60 +39,64 @@
 
 #header2 {
     /* position: relative; */
-    margin-top: 30vh;
-    width: 100%;
+     margin-top: 30vh; 
+    /* width: 100%; */
     /* top: 25vh; */
     
 }
 
-#header2 div {
-    display: flex;
-    align-content: center;
-    width: 140px; 
+#header2 #buttons-cont div {
+    /* display: flex; */
+    /* align-content: center; */
+    /* width: 140px;  */
     /* background-color: red;  */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     
     
     
 }
 
 #header2 h1 {
-    margin: 0 auto;
+    margin: 0 auto; 
     text-align: center;
     font-family: serif;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 20px;
     
 }
 
+#buttons-cont {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
 #two-buttons {
-    display: flex; 
-    /* justify-content: center; */
-    align-items: center;
-    justify-content: space-between;
+    /* display: flex;  */
+    /* justify-content: center;  */
+    /* align-items: center; */
+    /* justify-content: space-between; */
     /* height: 30px; */ 
 }
 
 #two-buttons h3 {
-    text-align: center;
-    margin-top: 3vh;
-    font-size: small;
-    width: 200px;
+    /* text-align: center; */
+    /* margin-top: 3vh; */
+    /* font-size: small; */
+    /* width: 100%; */
     
     
 }
 
 .discover-btn {
-    align-self: center;
-    padding: 3vh 3vw;
-    background-color: gold;
-
+    padding: 2vh 2vw;
 }
 
 .reserve-btn {
     position: relative;
-    /* padding-top: 3vh; */
-    left: 100px;
+    left: 5px;
+    /* padding-top: 3vh; 
+    left: 100px;   */
 }
 
 
@@ -101,11 +105,16 @@
 
 .flip-card {
     position: relative; 
-    /* right: 60px; */
+    right: 25px; 
     background-color: transparent; 
     width: 100%;
     height: 100%;
     perspective: 1000px; 
+}
+
+#card-flip-cont {
+    width: 170px;
+    
 }
 
 .flip-card-inner {
@@ -118,7 +127,7 @@
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 
 }
 
@@ -130,13 +139,14 @@
 }
 
 .flip-card-front {
-    /* background-color: greenyellow; */
+     background-color: greenyellow; 
     color: black;
 }
 
 .flip-card-back {
-    /* background-color: royalblue; */
+    background-color: royalblue; 
+    position: relative;
     color: white;
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
