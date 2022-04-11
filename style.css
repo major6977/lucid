@@ -4,11 +4,42 @@
   padding: 0;
 }
 
-#main-cont {
-   
-    max-width: 2500px;
-    height: 100vh;
+
+/* Veriable Font Sizes */
+
+:root {
+    --large-font: 4rem;
+    --medium-font: 2.5rem;
+    --small-font: 2rem;
+    --xsmall-font: 1.00rem;
+    --xxsmall-font: .75rem;
 }
+
+/* Background Image */
+
+#main-cont {
+    position: relative;   
+    background-image: url('images/spotlight.jpeg');
+    z-index: -3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh; 
+    width: auto; 
+    /* max-width: 2500px; */
+    /* height: 100vh; */
+    
+
+}
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba( 0, 0, 0, .4);
+} 
+
 
 #header {
     width: 90%;
@@ -16,6 +47,7 @@
     margin: 0 auto;
     height: 70px;
 }
+
 
 #header nav {
     height: 100%;
@@ -38,11 +70,17 @@
 /* Header 2 */
 
 #header2 {
-    /* position: relative; */
+    position: relative; 
      margin-top: 30vh; 
     /* width: 100%; */
     /* top: 25vh; */
     
+}
+
+#header2 img {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
 }
 
 #header2 #buttons-cont div {
@@ -62,6 +100,7 @@
     font-family: serif;
     font-size: 4rem;
     margin-top: 20px;
+    color: white;
     
 }
 
@@ -95,6 +134,8 @@
 .reserve-btn {
     position: relative;
     left: 5px;
+    color: white;
+    border-bottom: 4px solid white;
     /* padding-top: 3vh; 
     left: 100px;   */
 }
@@ -105,6 +146,7 @@
 
 .flip-card {
     position: relative; 
+    z-index: 4;
     right: 25px; 
     background-color: transparent; 
     width: 100%;
@@ -139,14 +181,36 @@
 }
 
 .flip-card-front {
-     background-color: greenyellow; 
+     background-color: lightgray; 
+     opacity: .7;
     color: black;
 }
 
 .flip-card-back {
     background-color: royalblue; 
+    opacity: .7;
     position: relative;
     color: white;
     transform: rotateY(180deg);
 }
 
+/* HEADER 3 */
+
+#header3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    color: white;
+}
+
+#header3  h3 {
+font-size: var(--xsmall-font);
+text-align: center;
+
+
+}
+
+#header3 h1 {
+    font-size: var(--medium-font);
+    text-align: center;
+}
