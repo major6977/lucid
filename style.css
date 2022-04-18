@@ -112,7 +112,7 @@
 
 #buttons-cont {
   display: flex;
-  /* position: relative; */
+  /* position: relative;  */
   bottom: 50vh;
   justify-content: center; 
   align-items: center;
@@ -135,19 +135,58 @@
     
 }
 
-.discover-btn {
+.discover-btn  {
     padding: 2vh 2vw;
+}
+.discover-btn:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 5);
+    background-color: black;
 }
 
 .reserve-btn {
-    position: relative;
+    /* position: relative; */
     left: 5px;
     color: white;
-    border-bottom: 4px solid white;
-    z-index: 4;
     /* padding-top: 3vh; 
     left: 100px;   */
 }
+
+.reserve-btn:hover {
+    cursor: pointer;
+    
+   
+}
+
+#underline-movement {
+    /* position: absolute;  */
+    /* display: none; */
+    border-bottom: 4px solid white;
+    /* margin-top: 25px; */
+    left: 670px;
+    /* height: 5px; */
+    width: 5px; 
+    transition: width 2s;
+}
+
+#underline-movement:hover {
+    /* display: block; */
+    width: 105px;
+    /* position: absolute; */
+    cursor: pointer;
+    /* animation: underline-movement 3s linear infinite; */
+}
+/* @keyframes underline-movement {
+    from {
+        width: 0;
+    }
+    to {
+        width: 105px;
+    }
+    
+} */
+
+
 
 
 
