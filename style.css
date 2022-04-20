@@ -278,15 +278,44 @@ color: white;
 /* PAGE 2 */
 
 #overlay2 {
-    position:relative;
+    /* position:relative;
     height: 100vh;
-    width: 100%;
+    width: 100%; */
     /* background-color: black; */
 }
-#lucid-pg2 {
-    display: flex; 
-    align-content: space-around;
-    height: 100vh;
-    width: 100%;
 
+#lucid-pg2 {
+    position: relative; 
+    height: 100vh;
+    background-color: rgba( 0, 0, 0, .035);
+}
+
+#lucid-pg2 div div {
+    display: flex;
+    /* justify-self: center; */
+    /* align-items: center; */
+    position: relative;
+    z-index: 2;
+    width: 50%;
+}
+
+#lucid-pg2 div div p {
+    align-self: center;
+}
+#lucid-pg2  div{
+    position: relative; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    /* align-content: space-around; */
+    /* height: 80vh; */
+     /* width: 100vw; */
+
+}
+
+#lucid-pg2 img {
+    position: relative;  
+    bottom: 0;
+    height: 90vh; 
+    /* width: auto; */
 }
