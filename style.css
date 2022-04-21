@@ -250,6 +250,7 @@
     z-index: 3;
     height: 80px; 
     width: 75vw;
+    margin-bottom: 20px;
     background-color: rgba( 0, 0, 0, .25);
 } 
 
@@ -277,45 +278,58 @@ color: white;
 
 /* PAGE 2 */
 
-#overlay2 {
-    /* position:relative;
-    height: 100vh;
-    width: 100%; */
-    /* background-color: black; */
-}
+
 
 #lucid-pg2 {
     position: relative; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;   
     height: 100vh;
+    width: 100vw;
     background-color: rgba( 0, 0, 0, .035);
 }
 
-#lucid-pg2 div div {
-    display: flex;
-    /* justify-self: center; */
-    /* align-items: center; */
-    position: relative;
+#overlay2 {
+    position:absolute;
+    height: 100%;
+    width: 100%; 
     z-index: 2;
-    width: 50%;
+    background-color: rgba( 0, 0, 0, .25); 
 }
 
-#lucid-pg2 div div p {
-    align-self: center;
-}
-#lucid-pg2  div{
-    position: relative; 
-    display: flex;  
-    justify-content: center; 
+
+#lucid-pg2-text {
+    display: flex;
     align-items: center;
-    /* align-content: space-around; */
-    /* height: 80vh; */
-     /* width: 100vw; */
+    position: absolute;
+    margin: 0 auto;
+    height: 100%; 
+    width: 70%;
+    z-index: 3;
+    
+    
+} 
 
-}
+ #lucid-pg2-text p {
+    position: relative;
+    text-align: center;
+    
+    bottom: 200px;
+    color: white;
+    z-index: 3;
+    font-size: xx-large;
+    
+} 
+
+
 
 #lucid-pg2 img {
-    position: relative;  
+    /* align-self: auto; */
+    position: relative;
     bottom: 0;
     height: 90vh; 
+    margin: 0 auto; 
+    z-index: 1;
     /* width: auto; */
 }
