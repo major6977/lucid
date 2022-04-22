@@ -279,6 +279,10 @@ color: white;
 /* PAGE 2 */
 
 
+#parallax-cont {
+    height: 500px;
+    /* overflow: hidden; */
+}
 
 #lucid-pg2 {
     position: relative; 
@@ -290,12 +294,26 @@ color: white;
     background-color: rgba( 0, 0, 0, .035);
 }
 
+#parallax {
+  position: relative;
+  z-index: 3;
+  background-image: url("images/lucid-wht4.jpeg"); 
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 #overlay2 {
     position:absolute;
     height: 100%;
     width: 100%; 
     z-index: 2;
-    background-color: rgba( 0, 0, 0, .25); 
+    /* background-color: rgba( 255, 0, 0, 0.05);  */
+    background-color: #1093D9;
+    opacity: .4;
 }
 
 
@@ -314,8 +332,7 @@ color: white;
  #lucid-pg2-text p {
     position: relative;
     text-align: center;
-    
-    bottom: 200px;
+    bottom: 100px;
     color: white;
     z-index: 3;
     font-size: xx-large;
