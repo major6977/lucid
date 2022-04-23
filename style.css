@@ -280,7 +280,7 @@ color: white;
 
 
 #parallax-cont {
-    height: 500px;
+   
     /* overflow: hidden; */
 }
 
@@ -294,11 +294,11 @@ color: white;
     background-color: rgba( 0, 0, 0, .035);
 }
 
-#parallax {
+#parallax-bkg-img {
   position: relative;
   z-index: 3;
-  background-image: url("images/lucid-wht4.jpeg"); 
-  min-height: 500px; 
+  background-image: url("images/lucid-interior-driver.jpeg"); 
+  height: 100vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -311,8 +311,8 @@ color: white;
     height: 100%;
     width: 100%; 
     z-index: 2;
-    /* background-color: rgba( 255, 0, 0, 0.05);  */
-    background-color: #1093D9;
+    background-color: rgba( 255, 0, 0, 0.05);  
+    /* background-color: #1093D9; */
     opacity: .4;
 }
 
@@ -349,4 +349,8 @@ color: white;
     margin: 0 auto; 
     z-index: 1;
     /* width: auto; */
+}
+
+#section3 {
+    height: 100vh;
 }
