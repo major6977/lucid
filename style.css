@@ -342,15 +342,130 @@ color: white;
 
 
 #lucid-pg2 img {
-    /* align-self: auto; */
     position: relative;
     bottom: 0;
     height: 90vh; 
     margin: 0 auto; 
     z-index: 1;
-    /* width: auto; */
 }
 
-#section3 {
-    height: 100vh;
+/* Section3 Containers */
+
+
+
+#section3-cont {
+    display: flex;
+    width: 100vw;  
 }
+
+#main-blk-box-cont div h1 {
+    font-size: 10vw;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+#main-blk-box-cont {
+    /* position: relative;   */
+    /* display: grid;   */
+     /* height: 100%;  */
+    width: 60%;    
+    background-color: white; 
+
+}
+
+#sec3-img-cont {
+    display: flex;
+}
+
+#sec3-left-img-txt-cont {
+    width: 40%;  
+    margin-left: 10px;
+
+}
+
+/* #brn-lucid-car {
+    width: 100px;
+} */
+
+#sec3-left-img-txt-cont img {
+     width: 100%;  
+    background-color:white;  
+
+}
+/*  Rightside Images */
+
+
+#rightside-cont div h1 {
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+}
+
+#rtside-lrg-img1-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+#rtside-lrg-img1-txt img {
+    width: 90%;
+}
+
+#rightside-cont {
+    background-color: black;
+    width: 40%;
+
+}
+
+.small-imgs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.small-imgs img {
+    width: 50%;
+}
+.small-imgs p {
+    margin-left: 10px;
+    
+}
+
+
+.small3-txt-imgs img {
+    width: 30%;
+}
+
+#sec3-right-imgs-txt-cont {
+    width: 45%;
+    margin-left: 5%;
+
+}
+
+#rtside-lrg-img1-txt h4 {
+    color: white;
+    width: 90%;
+}
+#rtside-lrg-img1-txt p {
+    color: white;
+    width: 90%;
+}
+.small3-txt-imgs p {
+    color: white;
+}
+
+.small3-txt-imgs {
+    display: flex;
+}
+    
+
+
+
+
+
