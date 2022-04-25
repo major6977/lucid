@@ -381,7 +381,7 @@ color: white;
 }
 
 #sec3-left-img-txt-cont {
-    width: 40%;  
+    width: 60%;  
     margin-left: 10px;
 
 }
@@ -414,7 +414,7 @@ color: white;
 }
 
 #rtside-lrg-img1-txt img {
-    width: 90%;
+    width: 90%; 
 }
 
 #rightside-cont {
@@ -458,11 +458,36 @@ color: white;
 }
 .small3-txt-imgs p {
     color: white;
+    padding-right: 20px;
+}
+
+#small3-imgs-txt-cont {
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+    left: 5%;
 }
 
 .small3-txt-imgs {
     display: flex;
+    margin-bottom: 10px;
+    
 }
+
+/* Set2 Car Images */
+
+#set2-car-imgs-cont {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+#set2-car-imgs-cont img {
+    width: 20vw;
+    
+}
+
+
+
     
 
 
