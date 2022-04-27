@@ -33,6 +33,7 @@
 #header {
   position: fixed;
   overflow: hidden;
+
   top: 0;
   width: 90%;
   background-color: rgb(0, 0, 0);
@@ -248,7 +249,7 @@
 }
 
 #parallax-bkg-img {
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   background-image: url("images/lucid-interior-driver.jpeg");
   height: 100vh;
@@ -300,6 +301,7 @@
 #section3-cont {
   display: flex;
   width: 100vw;
+  /* -webkit-scrollbar display: none; */
 }
 
 #main-blk-box-cont div h1 {
