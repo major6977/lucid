@@ -498,3 +498,9 @@ html {
   color: black;
   cursor: pointer;
 }
+
+/* Features Page 2 */
+
+#features-sec2 img {
+  width: 100vw;
+}
