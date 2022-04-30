@@ -501,6 +501,51 @@ html {
 
 /* Features Page 2 */
 
-#features-sec2 img {
+#features-sec2 {
+  position: relative;
+  height: 100vh;
   width: 100vw;
+}
+
+#features-sec2-background-img {
+  background-image: url("images/lucid-brwn500.jpeg");
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#features-sec2-info-cont {
+  position: absolute;
+  z-index: 2;
+  bottom: 120px;
+  width: 100vw;
+}
+
+#info-small-txt-cont {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+}
+
+#info-small-txt-cont p {
+  position: relative;
+  font-size: medium;
+  text-align: center;
+  width: 12%;
+}
+
+#features-sec2-numbs-cont {
+  display: flex;
+  margin-top: 0%;
+  justify-content: space-around;
+  /* font-size: 3vw; */
+  color: white;
+}
+#features-sec2-numbs-cont h3 {
+  text-align: center;
+  width: 12%;
+  font-size: 2.5vw;
 }
