@@ -650,7 +650,7 @@ html {
   color: white;
 }
 
-/* Section 4 Interior */
+/* Section 4  */
 
 #features-sec4-cont {
   position: relative;
@@ -664,12 +664,13 @@ html {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #features-sec4-img-cont {
   position: relative;
   width: 100vw;
+  /* height: 100vh; */
 }
 #features-sec4-img-cont img {
   position: relative;
@@ -688,6 +689,12 @@ html {
   width: 50%;
   line-height: 2.5em;
   font-size: large;
+}
 
-  /* background-color: aqua; */
+/* Section 5 */
+
+#features-sec5-cont {
+  background-color: royalblue;
+  height: 100vh;
+  width: 100vw;
 }
