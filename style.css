@@ -694,7 +694,60 @@ html {
 /* Section 5 */
 
 #features-sec5-cont {
-  background-color: royalblue;
-  height: 100vh;
+  position: relative;
+  top: -6vh;
   width: 100vw;
+  height: 100vh;
+  background-color: #161617;
+}
+
+#features-sec5-img1-cont {
+  position: absolute;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#features-sec5-img1-cont img {
+  width: 100%;
+}
+#reviews-cont1 {
+  position: absolute;
+  color: white;
+  width: 100%;
+}
+#reviews-cont1 img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+#features-sec5-img2-cont {
+  position: absolute;
+  width: 30%;
+  left: 67%;
+  top: 60%;
+  /* border: 10px solid #161617; */
+  border: 10px solid #161617;
+}
+
+#features-sec5-img2-cont img {
+  width: 100%;
+  padding: 1px;
+  background-color: white;
+}
+
+#features-sec5-img3-cont {
+  position: absolute;
+  width: 25%;
+  top: 27%;
+  left: 20px;
+  border: 10px solid #161617;
+}
+
+#features-sec5-img3-cont img {
+  width: 100%;
+  padding: 1px;
+  background-color: white;
 }
