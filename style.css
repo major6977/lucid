@@ -710,17 +710,18 @@ html {
 }
 
 #features-sec5-img1-cont img {
-  width: 100%;
+  width: 90%;
 }
 #reviews-cont1 {
   position: absolute;
   color: white;
-  width: 100%;
+  height: 100%;
 }
 #reviews-cont1 img {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 110px;
+  border-radius: 150px;
 }
 
 #features-sec5-img2-cont {
