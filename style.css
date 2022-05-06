@@ -713,41 +713,88 @@ html {
   width: 90%;
 }
 #reviews-cont1 {
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 30px;
   color: white;
   height: 100%;
+  width: 50%;
+  margin-left: 80px;
+  text-align: right;
 }
 #reviews-cont1 img {
-  position: absolute;
+  /* position: absolute; */
   width: 120px;
-  height: 110px;
-  border-radius: 150px;
+  height: 120px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 0.5em;
+  shape-outside: circle();
 }
 
 #features-sec5-img2-cont {
   position: absolute;
   width: 30%;
   left: 67%;
-  top: 60%;
+  top: 30%;
   /* border: 10px solid #161617; */
-  border: 10px solid #161617;
+  /* border: 10px solid #161617; */
 }
 
 #features-sec5-img2-cont img {
   width: 100%;
   padding: 1px;
   background-color: white;
+  border: 10px solid #161617;
+}
+
+#reviews-cont2 {
+  /* position: absolute; */
+  color: white;
+  height: 100%;
+  margin-left: 60px;
+}
+
+#reviews-cont2 img {
+  /* position: absolute; */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* bottom: 500px; */
+  /* left: 180px; */
+  float: left;
+  margin-right: 2px;
+  margin-bottom: 0.5em;
+  shape-outside: circle();
+}
+
+#reviews-cont2 p {
+  position: relative;
+  color: white;
+  /* bottom: 270px; */
+  /* left: 50px; */
+  width: 80%;
+  top: 15px;
 }
 
 #features-sec5-img3-cont {
   position: absolute;
-  width: 25%;
-  top: 27%;
+  width: 30%;
+  top: 55%;
   left: 20px;
   border: 10px solid #161617;
 }
 
-#features-sec5-img3-cont img {
+#jeffery-img {
+  height: 150px;
+  width: 150px;
+}
+
+#reviews-cont3 {
+  color: white;
+}
+
+#blk-car-img {
   width: 100%;
   padding: 1px;
   background-color: white;
