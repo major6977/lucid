@@ -10,8 +10,8 @@ html {
 
 :root {
   --large-font: 4rem;
-  --medium-font: 2.5rem;
-  --small-font: 2rem;
+  --medium-font: 2.2rem;
+  --small-font: 1.5rem;
   --xsmall-font: 1rem;
   --xxsmall-font: 0.75rem;
 }
@@ -59,9 +59,16 @@ html {
 #header nav ul li {
   list-style: none;
 }
+
 #header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: bisque;
+}
+
+#header nav ul .current a {
+  background-color: white;
+  color: black;
+  padding: 5px 7px;
 }
 
 /* Header 2 */
@@ -90,7 +97,6 @@ html {
   font-family: serif;
   font-size: 4vw;
   text-transform: uppercase;
-  /* margin-top: 20px; */
   color: black;
 }
 
@@ -801,4 +807,43 @@ html {
   /* padding: 1px; */
   /* background-color: white; */
   /* border: 10px solid #161617;  */
+}
+
+/* Contact Page */
+
+#contact-sec2-cont {
+  height: 50vh;
+  width: 100vw;
+  background-color: hsl(240, 2%, 4%);
+}
+
+#contact-sec2-txt h2 {
+  padding-top: 20%;
+  padding-left: 5%;
+  color: bisque;
+}
+
+#contact-sec3-cont {
+  height: 50vh;
+  width: 100vw;
+  background-color: #161617;
+}
+
+#select-cont1 {
+  margin-left: 5%;
+  padding-top: 10%;
+}
+
+#city-states {
+  font-size: var(--small-font);
+  padding: 5px 7px;
+  color: bisque;
+  background-color: #161617;
+  border: none;
+  border-bottom: 2px solid bisque;
+  width: 23%;
+}
+
+#city-states:focus {
+  outline: none;
 }
