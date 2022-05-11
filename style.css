@@ -831,7 +831,7 @@ html {
 
 #select-cont1 {
   margin-left: 5%;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 #city-states {
@@ -846,4 +846,38 @@ html {
 
 #city-states:focus {
   outline: none;
+}
+
+/* Lucid Locations Infomation */
+
+#location-photos-cont {
+  margin-top: 15%;
+  width: 100vw;
+  height: 150vh;
+  background-color: aqua;
+}
+.all9-imgs {
+  display: flex;
+  margin-top: 10%;
+  height: 30vh;
+  width: 30vw;
+}
+
+.first3-locations-img-cont {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 100%; */
+  /* background-color: orangered; */
+}
+
+.second3-locations-img-cont {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+}
+
+.final3-locations-cont {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: rebeccapurple; */
 }
