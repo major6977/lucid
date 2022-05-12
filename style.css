@@ -14,6 +14,8 @@ html {
   --small-font: 1.5rem;
   --xsmall-font: 1rem;
   --xxsmall-font: 0.75rem;
+  --gold-text: #b9aa88;
+  --white-text: white;
 }
 
 /* Background Image */
@@ -62,13 +64,28 @@ html {
 
 #header nav ul li a {
   text-decoration: none;
-  color: bisque;
+  color: var(--gold-text);
 }
 
 #header nav ul .current a {
   background-color: white;
   color: black;
   padding: 5px 7px;
+}
+
+#stay-updated {
+  border: 2px solid #fff;
+
+  padding: 5px 7px;
+  transition: 1.5s;
+  background-color: #161617;
+}
+#stay-updated:hover {
+  /* width: 135px; */
+  background-color: var(--white-text);
+}
+#stay-updated a:hover {
+  color: #161617;
 }
 
 /* Header 2 */
@@ -181,7 +198,7 @@ html {
 .flip-card-back {
   background-color: rgb(0, 0, 0);
   position: relative;
-  color: white;
+  color: var(--white-text);
   transform: rotateY(180deg);
 }
 
@@ -196,7 +213,7 @@ html {
   margin-top: 0px;
   z-index: 4;
 
-  color: white;
+  color: var(--white-text);
 }
 
 #section2 {
@@ -220,7 +237,7 @@ html {
   text-align: center;
 
   z-index: 4;
-  color: white;
+  color: var(--white-text);
 }
 
 #header3 div h1 {
@@ -230,7 +247,7 @@ html {
   font-size: 3vw;
   text-align: center;
   z-index: 4;
-  color: white;
+  color: var(--white-text);
 }
 
 /* PAGE 2 */
@@ -349,7 +366,7 @@ html {
 #rightside-cont div h1 {
   font-size: 5vw;
   text-align: center;
-  color: white;
+  color: var(--white-text);
 }
 
 #rtside-lrg-img1-txt {
@@ -393,16 +410,16 @@ html {
 }
 
 #rtside-lrg-img1-txt h4 {
-  color: white;
+  color: var(--white-text);
   width: 90%;
   padding-top: 10px;
 }
 #rtside-lrg-img1-txt p {
-  color: white;
+  color: var(--white-text);
   width: 90%;
 }
 .small3-txt-imgs p {
-  color: white;
+  color: var(--white-text);
   padding-right: 20px;
 }
 
@@ -492,7 +509,7 @@ html {
 }
 
 #sec4-submit-btn:hover {
-  background-color: white;
+  background-color: var(--white-text);
   color: black;
   cursor: pointer;
 }
@@ -552,7 +569,7 @@ html {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  color: white;
+  color: var(--white-text);
 }
 
 #info-small-txt-cont p {
@@ -568,7 +585,7 @@ html {
   margin-top: 20px;
   justify-content: space-around;
   /* font-size: 3vw; */
-  color: white;
+  color: var(--white-text);
 }
 #features-sec2-numbs-cont h3 {
   text-align: center;
@@ -605,7 +622,7 @@ html {
   justify-content: space-between;
   width: 90%;
   margin: 60px auto 10px auto;
-  color: white;
+  color: var(--white-text);
 }
 
 #features-sec3-h3-cont h3 {
@@ -645,7 +662,7 @@ html {
 #features-sec3-button:hover {
   cursor: pointer;
   background-color: #572f27;
-  color: white;
+  color: var(--white-text);
 }
 
 /* Section 4  */
@@ -680,7 +697,7 @@ html {
 #features-sec4-h3-cont {
   position: absolute;
   z-index: 3;
-  color: white;
+  color: var(--white-text);
   transform: translateX(-50%);
   left: 50%;
   bottom: 25%;
@@ -692,7 +709,7 @@ html {
 /* Section 5 */
 
 #features-sec5-cont h2 {
-  color: white;
+  color: var(--white-text);
   text-align: center;
   font-family: sans-serif;
   font-size: xx-large;
@@ -720,7 +737,7 @@ html {
 
 #reviews-cont1 {
   margin-top: 60px;
-  color: white;
+  color: var(--white-text);
   margin-left: 50px;
   text-align: right;
 }
@@ -748,7 +765,7 @@ html {
 }
 
 #reviews-cont2 {
-  color: white;
+  color: var(--white-text);
   height: 100%;
   width: 30%;
   bottom: 50px;
@@ -767,7 +784,7 @@ html {
 }
 
 #reviews-cont2 p {
-  color: white;
+  color: var(--white-text);
 }
 
 #features-sec5-img3-cont {
@@ -782,7 +799,7 @@ html {
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #fff;
   float: right;
   margin-left: 10px;
   /* margin-right: 2px; */
@@ -791,7 +808,7 @@ html {
 }
 
 #reviews-cont3 {
-  color: white;
+  color: var(--white-text);
   width: 35%;
   margin-left: 5%;
   margin-top: 60px;
@@ -804,9 +821,6 @@ html {
 
 #blk-car-img {
   width: 65%;
-  /* padding: 1px; */
-  /* background-color: white; */
-  /* border: 10px solid #161617;  */
 }
 
 /* Contact Page */
@@ -820,11 +834,11 @@ html {
 #contact-sec2-txt h2 {
   padding-top: 20%;
   padding-left: 5%;
-  color: bisque;
+  color: var(--gold-text);
 }
 
 #contact-sec3-cont {
-  height: 50vh;
+  /* height: 50vh; */
   width: 100vw;
   background-color: #161617;
 }
@@ -837,10 +851,10 @@ html {
 #city-states {
   font-size: var(--small-font);
   padding: 5px 7px;
-  color: bisque;
+  color: var(--gold-text);
   background-color: #161617;
   border: none;
-  border-bottom: 2px solid bisque;
+  border-bottom: 2px solid #b9aa88;
   width: 23%;
 }
 
@@ -852,32 +866,50 @@ html {
 
 #location-photos-cont {
   margin-top: 15%;
+  padding-bottom: 40px;
+
   width: 100vw;
-  height: 150vh;
-  background-color: aqua;
+
+  /* height: 200vh; */
 }
+
+.all-locations-imgs-cont {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .all9-imgs {
   display: flex;
   margin-top: 10%;
-  height: 30vh;
-  width: 30vw;
+  /* height: 30vh; */
+  width: 27vw;
+}
+
+.locations-info {
+  width: 27vw;
+  color: var(--gold-text);
+}
+
+.locations-info a {
+  color: var(--white-text);
+  text-decoration: none;
 }
 
 .first3-locations-img-cont {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* width: 100%; */
   /* background-color: orangered; */
 }
 
 .second3-locations-img-cont {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* background-color: aqua; */
 }
 
 .final3-locations-cont {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* background-color: rebeccapurple; */
 }
