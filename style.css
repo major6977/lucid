@@ -622,8 +622,8 @@ html {
 }
 
 #features-sec3-button {
-  width: 15vw;
-  height: 10vh;
+  width: 30vw;
+  height: 7vh;
   border: none;
 }
 #features-sec3-button:hover {
@@ -698,7 +698,7 @@ html {
   margin-top: 30px;
 }
 
-#features-sec5-img1-cont img {
+#white-car {
   width: 65%;
 }
 
@@ -902,9 +902,50 @@ html {
     background-attachment: scroll;
   }
 
-  #section4-img-cont {
+  #features-sec2 {
+    bottom: 12vh !important;
+  }
+
+  /* #section4-img-cont {
     display: none;
   }
+  #features-sec5-img1-cont {
+    display: block;
+  }
+
+  #white-car {
+    width: 100%;
+  }
+
+  #features-sec5-img2-cont {
+    display: block;
+  } */
+
+  /* #reviews-cont2 {
+    width: 100%;
+  }
+  #interior {
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  #features-sec5-img3-cont {
+    display: block;
+  }
+
+  #blk-car-img {
+    width: 100%;
+  }
+  #reviews-cont3 {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  } */
+
+  /* #features-sec5-cont {
+    height: 185vh;
+  } */
 }
 
 @media (max-width: 800px) {
@@ -916,6 +957,20 @@ html {
     width: 80%;
     line-height: 2;
     bottom: 20%;
+  }
+
+  #info-small-txt-cont p {
+    font-size: 12px;
+    width: 13%;
+  }
+
+  #features-sec3-p1-cont {
+    font-size: 12px;
+    width: 75%;
+  }
+
+  #features-sec5-cont h2 {
+    font-size: x-large;
   }
 }
 
@@ -963,23 +1018,6 @@ html {
     width: 50%;
   }
 
-  #sec4-sign-up-cont {
-    display: block;
-  }
-  #sec4-sign-up-cont h3 {
-    text-align: center;
-    padding: 0;
-  }
-  #sec4-sign-up-h3 {
-    width: 100%;
-    height: 50%;
-  }
-
-  #sec4-input-cont {
-    width: 100%;
-    justify-content: center;
-  }
-
   #e-mail-input {
     width: 60vw;
   }
@@ -991,6 +1029,7 @@ html {
   #section4-cont {
     bottom: 10px;
   }
+
   .small-imgs p {
     font-size: var(--small-font);
   }
@@ -998,6 +1037,68 @@ html {
 
   #features-sec2-info-cont {
     bottom: 120px;
+  }
+
+  #section4-img-cont {
+    display: none;
+  }
+  #features-sec5-img1-cont {
+    display: block;
+  }
+
+  #white-car {
+    width: 100%;
+  }
+
+  #features-sec5-img2-cont {
+    display: block;
+  }
+
+  #sec4-sign-up-cont {
+    display: block;
+    height: 70vh;
+  }
+  #sec4-sign-up-cont h3 {
+    text-align: center;
+    padding: 0;
+  }
+  #sec4-sign-up-h3 {
+    width: 90%;
+    display: block;
+    height: 10vh;
+    margin: 0 auto;
+  }
+
+  #sec4-input-cont {
+    width: 100%;
+    height: 50vh;
+    display: block;
+    margin-left: 20%;
+  }
+
+  #reviews-cont2 {
+    width: 100%;
+  }
+  #interior {
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  #features-sec5-img3-cont {
+    display: block;
+  }
+
+  #blk-car-img {
+    width: 100%;
+  }
+  #reviews-cont3 {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  #features-sec5-cont {
+    height: 287vh;
   }
 }
 
