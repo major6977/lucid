@@ -881,13 +881,20 @@ html {
   justify-content: space-between;
 }
 
-@media (max-width: 500px) {
+/* Media Query 414 */
+
+@media (max-width: 414px) {
   #header {
     display: none;
   }
   #header3 div h3 {
     font-size: 15px;
   }
+
+  #white-car {
+    width: 90vw;
+  }
+
   #header3 div h1 {
     margin: 0 auto;
     padding-bottom: 15px;
@@ -903,52 +910,16 @@ html {
   }
 
   #features-sec2 {
-    bottom: 12vh !important;
+    bottom: 15vh !important;
   }
-
-  /* #section4-img-cont {
-    display: none;
+  #features-sec5-cont {
+    height: 1000px;
   }
-  #features-sec5-img1-cont {
-    display: block;
-  }
-
-  #white-car {
-    width: 100%;
-  }
-
-  #features-sec5-img2-cont {
-    display: block;
-  } */
-
-  /* #reviews-cont2 {
-    width: 100%;
-  }
-  #interior {
-    width: 100%;
-    margin-top: 30px;
-    display: inline-block;
-  }
-
-  #features-sec5-img3-cont {
-    display: block;
-  }
-
-  #blk-car-img {
-    width: 100%;
-  }
-  #reviews-cont3 {
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 0;
-  } */
-
-  /* #features-sec5-cont {
-    height: 185vh;
-  } */
 }
 
-@media (max-width: 800px) {
+/* Media Query 768 */
+
+@media (max-width: 768px) {
   #features-sec2 {
     bottom: 14vh;
   }
@@ -972,7 +943,12 @@ html {
   #features-sec5-cont h2 {
     font-size: x-large;
   }
+  #features-sec5-cont {
+    height: 1300px;
+  }
 }
+
+/* Media Query 1000 */
 
 @media (max-width: 1000px) {
   #main-blk-box-cont {
@@ -1040,15 +1016,36 @@ html {
   }
 
   #section4-img-cont {
-    display: none;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
   }
   #features-sec5-img1-cont {
     display: block;
   }
 
   #white-car {
-    width: 100%;
+    width: 50vw;
+    /* max-width: 400px; */
   }
+
+  #reviews-cont1 {
+    width: 65%;
+    margin-left: 30%;
+    /* position: relative; */
+  }
+  #reviews-cont1 p {
+    padding-right: 20px;
+  }
+
+  #reviews-cont1 img {
+    float: right;
+    margin-left: 20px;
+  }
+  /* #reviews-cont2 {
+    width: 65%;
+  } */
 
   #features-sec5-img2-cont {
     display: block;
@@ -1077,10 +1074,10 @@ html {
   }
 
   #reviews-cont2 {
-    width: 100%;
+    width: 65%;
   }
   #interior {
-    width: 100%;
+    width: 90%;
     margin-top: 30px;
     display: inline-block;
   }
@@ -1090,35 +1087,27 @@ html {
   }
 
   #blk-car-img {
-    width: 100%;
+    position: relative;
+    /* width: 100%; */
+    max-width: 50vw;
+    left: 48%;
+  }
+
+  #jeffery-img {
+    float: left;
+    margin-right: 20px;
   }
   #reviews-cont3 {
-    width: 100%;
+    width: 65%;
     margin-top: 30px;
     margin-left: 0;
+    text-align: left;
+  }
+  #review-cont3 p {
+    margin-left: 20px;
   }
   #features-sec5-cont {
-    height: 287vh;
+    height: 1900px;
+    padding-top: 100px;
   }
-}
-
-#parent {
-  position: relative;
-  height: 1000px;
-  width: 500px;
-  background-color: aqua;
-}
-
-#child {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  bottom: 0;
-  background-color: orangered;
-}
-#pre-child {
-  /* position: relative; */
-  height: 300px;
-  width: 700px;
-  background-color: blueviolet;
 }
