@@ -836,8 +836,6 @@ html {
   padding-bottom: 40px;
 
   width: 100vw;
-
-  /* height: 200vh; */
 }
 
 .all-locations-imgs-cont {
@@ -948,9 +946,9 @@ html {
   }
 }
 
-/* Media Query 1000 */
+/* Media Query at 930px */
 
-@media (max-width: 1000px) {
+@media (max-width: 930px) {
   #main-blk-box-cont {
     width: 100%;
   }
@@ -1027,7 +1025,6 @@ html {
 
   #white-car {
     width: 50vw;
-    /* max-width: 400px; */
   }
 
   #reviews-cont1 {
