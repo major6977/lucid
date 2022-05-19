@@ -811,6 +811,7 @@ html {
 }
 
 #select-cont1 {
+  /* position: sticky; */
   margin-left: 5%;
   padding-top: 5%;
 }
@@ -913,6 +914,28 @@ html {
   #features-sec5-cont {
     height: 1000px;
   }
+
+  #contact-sec2-cont {
+    height: 25vh;
+  }
+
+  #city-states {
+    width: 60%;
+  }
+
+  .first3-locations-img-cont,
+  .second3-locations-img-cont,
+  .final3-locations-cont {
+    display: block;
+  }
+
+  .all9-imgs {
+    width: 100%;
+  }
+
+  .locations-info h3 {
+    width: 100%;
+  }
 }
 
 /* Media Query 768 */
@@ -942,7 +965,7 @@ html {
     font-size: x-large;
   }
   #features-sec5-cont {
-    height: 1300px;
+    height: 1700px !important;
   }
 }
 
@@ -1028,7 +1051,7 @@ html {
   }
 
   #reviews-cont1 {
-    width: 65%;
+    width: 75%;
     margin-left: 30%;
     /* position: relative; */
   }
@@ -1071,7 +1094,7 @@ html {
   }
 
   #reviews-cont2 {
-    width: 65%;
+    width: 75%;
   }
   #interior {
     width: 90%;
@@ -1086,7 +1109,7 @@ html {
   #blk-car-img {
     position: relative;
     /* width: 100%; */
-    max-width: 50vw;
+    max-width: 40vw;
     left: 48%;
   }
 
@@ -1095,7 +1118,7 @@ html {
     margin-right: 20px;
   }
   #reviews-cont3 {
-    width: 65%;
+    width: 75%;
     margin-top: 30px;
     margin-left: 0;
     text-align: left;
@@ -1106,5 +1129,13 @@ html {
   #features-sec5-cont {
     height: 1900px;
     padding-top: 100px;
+  }
+
+  #contact-sec2-cont {
+    height: 25vh;
+  }
+
+  #sec4-sign-up-cont h3 {
+    padding: 20px;
   }
 }
