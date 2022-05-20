@@ -1,10 +1,6 @@
-$(document).ready(function () {
-  $("#underline-movement").mouseover(function () {
-    $("#actual-underline").animate({ width: "105px" });
-  });
-});
-$(document).ready(function () {
-  $("#underline-movement").mouseout(function () {
-    $("#actual-underline").animate({ width: "0px" });
-  });
+// Fading Text 1 (Lucid Air Page) and Text 2 (Features Page)
+
+$(window).scroll(function () {
+  $("#fade-txt1").css("opacity", 1.7 - $(window).scrollTop() / 500);
+  $("#fade-txt2").css("opacity", 1.7 - $(window).scrollTop() / 800);
 });
