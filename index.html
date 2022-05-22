@@ -11,6 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -33,9 +40,22 @@
           </ul>
         </nav>
       </section>
+      <section class="mobile-header">
+        <div class="topnav topnav-index-page">
+          <a href="index.html" class="active">Logo</a>
+          <div id="my-links">
+            <a href="index.html">LUCID AIR</a>
+            <a href="features.html">FEATURES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="#sec4-input-cont">STAY UPDATED</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </section>
       <section id="header2">
         <h1>Lucid Air</h1>
-
         <div id="buttons-cont">
           <div id="card-flip-cont">
             <div class="flip-card" id="two-buttons">
@@ -73,21 +93,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="header3">
-        <div class="overlay"></div>
-        <div>
-          <h3>Official EPA range up to <sup>1</sup></h3>
-          <h1>520 mi</h1>
-        </div>
-        <div>
-          <h3>Starting From <sup>2</sup></h3>
-          <h1>$77,400</h1>
-        </div>
-        <div>
-          <h3>Max power <sup>3</sup></h3>
-          <h1>1,111 hp</h1>
-        </div>
-      </section> -->
     </div>
 
     <!-- Lucid Page 2 -->
@@ -259,7 +264,6 @@
         </div>
       </div>
     </section>
-
     <script src="lucid.js"></script>
   </body>
 </html>

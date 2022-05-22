@@ -891,6 +891,10 @@ html {
   justify-content: space-between;
 }
 
+.mobile-header {
+  display: none;
+}
+
 /* Media Query 414 */
 
 @media (max-width: 414px) {
@@ -922,6 +926,11 @@ html {
   #features-sec2 {
     bottom: 15vh !important;
   }
+
+  #features-sec4-h3-cont {
+    position: relative;
+    bottom: 10%;
+  }
   #features-sec5-cont {
     height: 1000px;
   }
@@ -946,6 +955,68 @@ html {
 
   .locations-info h3 {
     width: 100%;
+  }
+}
+
+/* Media Query at 500 for Hamburger Menu */
+
+@media (max-width: 500px) {
+  #header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+    background-color: #161617;
+    transition: all 2s;
+    color: white;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #161617;
+    position: relative;
+  }
+  .topnav-index-page {
+    /* overflow: hidden;
+    background-color: #161617;
+    position: relative; */
+    top: 30px;
+  }
+
+  .topnav #my-links {
+    display: none;
+  }
+
+  .topnav a {
+    color: #b9aa88;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a:hover {
+    background-color: #fff;
+    color: #161617;
+    transition: all 1s;
+  }
+
+  .topnav a.icon {
+    background: #161617;
+    color: #b9aa88;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .active {
+    background-color: #161617;
+    color: #fff;
+    display: inline-block;
+    padding-top: 50px;
   }
 }
 
