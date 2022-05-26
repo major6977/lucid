@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <script
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Document</title>
   </head>
   <body>
@@ -35,20 +41,19 @@
       </nav>
     </section>
     <section class="mobile-header">
-      <div class="topnav" > 
+      <div class="topnav">
         <a href="index.html" class="active">Logo</a>
         <div id="my-links">
           <a href="index.html">LUCID AIR</a>
           <a href="features.html">FEATURES</a>
           <a href="contact.html">CONTACT</a>
           <a href="#sec4-input-cont">STAY UPDATED</a>
-
         </div>
-        <a href= "javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-        </div>
-      </section>
+      </div>
+    </section>
     <!-- Main Header -->
 
     <section id="contact-sec2-cont">
@@ -57,9 +62,29 @@
       </div>
     </section>
 
-    <section id="contact-sec3-cont">
-      <div id="select-cont1">
-        <select name="city-states" id="city-states">
+    <section  class="dropdown" id="contact-sec3-cont">
+      <button onclick="myFunction()" class="dropbtn">dropdown</button>
+      <div class="select-cont1 dropdown-content" id="myDropdown"> 
+        
+              <a href="#bhc">Beverly Hills, CA</a>
+            
+              <a href="#bo">Boston, MA</a>
+           
+              <a href="#chi">Chicago IL</a>
+            
+              <a href="#la">Los Angeles, CA</a>
+           
+              <a href="#mi">Miami, FL</a>
+            
+              <a href="#sct">Scottsdale, AZ</a>
+            
+              <a href="#sea">Seattle, WA</a>
+            
+              <a href="#to">Toronto, ON</a>
+            
+              <a href="#van">Vancouver, BC</a>
+            
+        <!-- <select name="city-states" id="city-states">
           <option value="locations">locations</option>
           <a href="https://:www.google.com"></a><option value="scottsdales-az">
             Scottsdale, AZ
@@ -72,17 +97,19 @@
           <option value="chicago-il">Chicago, IL</option>
           <option value="vancouver-bc">Vancouver, BC</option>
           <option value="toronto-on">Toronto, ON</option>
-        </select>
+        </select> -->
+
       </div>
+      </section>
 
       <!-- Photos and locations  -->
 
       <section id="location-photos-cont">
         <div class="all-locations-imgs-cont">
           <div class="first3-locations-img-cont">
-            <div class="locations-info">
+            <div class="locations-info" id="sct">
               <img
-                id="sd"
+                
                 class="all9-imgs"
                 src="images/lucid-location-scottsdale.png"
                 alt="Scottsdale, AZ"
@@ -95,6 +122,7 @@
             </div>
             <div class="locations-info">
               <img
+              id="la"
                 class="all9-imgs"
                 src="images/lucid-location-la.png"
                 alt="LA location"
@@ -105,8 +133,9 @@
               </h3>
               <a href="tel:+(14244437063)"> 1 (424) 443-7063</a>
             </div>
-            <div class="locations-info">
+            <div class="locations-info" id="bhc">
               <img
+              
                 class="all9-imgs"
                 src="images/lucid-locations-beverly-hills.png"
                 alt="Beverly Hills location"
@@ -122,6 +151,7 @@
           <div class="second3-locations-img-cont">
             <div class="locations-info">
               <img
+              itemid="sea"
                 id="sea"
                 class="all9-imgs"
                 src="images/lucid-location-seattle.png"
@@ -132,8 +162,10 @@
               </h3>
               <a href="tel:+(12063121040)"> 1 (206) 312-1040</a>
             </div>
+            <div id="bo"></div>
             <div class="locations-info">
               <img
+              
                 class="all9-imgs"
                 src="images/lucid-location-boston.png"
                 alt="Boston, MA location"
@@ -145,6 +177,7 @@
             </div>
             <div class="locations-info">
               <img
+              id="mi"
                 class="all9-imgs"
                 src="images/lucid-location-miami.png"
                 alt="Miami,FL"
@@ -160,6 +193,7 @@
           <div class="final3-locations-cont">
             <div class="locations-info">
               <img
+              id="chi"
                 class="all9-imgs"
                 src="images/lucid-location-chicago.png"
                 alt="Chicago , IL"
@@ -172,6 +206,7 @@
             </div>
             <div class="locations-info">
               <img
+              id="van"
                 class="all9-imgs"
                 src="images/lucid-location-vancouver.png"
                 alt="Vancouver Canada location"
@@ -184,6 +219,7 @@
             </div>
             <div class="locations-info">
               <img
+              id="to"
                 class="all9-imgs"
                 src="images/lucid-location-onterio.png"
                 alt="Onterio Canada"
@@ -214,6 +250,6 @@
         </form>
       </div>
     </div>
-     <script src="lucid.js"></script>
+    <script src="lucid.js"></script>
   </body>
 </html>
