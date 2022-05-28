@@ -37,3 +37,31 @@ window.onclick = function (event) {
     }
   }
 };
+
+// Weather API
+
+let weather = {
+  apiKey: "38564753ed038f14cb4ef6819ad2f457",
+  fetchWeather: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeather(data));
+  },
+  displayWeather: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, humidity, temp_max, temp_min } = data.main;
+    const { speed, gust } = data.wind;
+
+    document.querySelector(".temp").innerHTML =
+      "Temperature: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector(".icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+  },
+};
+weather.fetchWeather("Scottsdale");
