@@ -885,7 +885,17 @@ html {
 .weather-api {
   color: white;
   display: flex;
+  align-items: center;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
+/* .icon {
+  height: 50px;
+
+} */
 
 .show {
   display: block;

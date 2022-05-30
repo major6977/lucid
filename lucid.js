@@ -42,7 +42,7 @@ window.onclick = function (event) {
 
 let weather = {
   apiKey: "38564753ed038f14cb4ef6819ad2f457",
-  fetchWeather: function (city) {
+  fetchWeatherScottsdale: function (city) {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
@@ -50,18 +50,85 @@ let weather = {
         this.apiKey
     )
       .then((Response) => Response.json())
-      .then((data) => this.displayWeather(data));
+      .then((data) => this.displayWeatherScottsdale(data));
   },
-  displayWeather: function (data) {
+
+  displayWeatherScottsdale: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
-    const { temp, humidity, temp_max, temp_min } = data.main;
-    const { speed, gust } = data.wind;
+    const { temp, temp_max, temp_min } = data.main;
 
-    document.querySelector(".temp").innerHTML =
-      "Temperature: " + temp.toFixed(0) + "<span>&#176 f</span>";
-    document.querySelector(".icon").src =
+    // Scottsdale, AZ
+
+    document.querySelector(".sct-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#sct-desc").innerHTML = description;
+    document.querySelector("#sct-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#sct-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#sct-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Las Angeles
+
+  fetchWeatherLosAngeles: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherLa(data));
+  },
+
+  displayWeatherLa: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#la-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#la-desc").innerHTML = description;
+    document.querySelector("#la-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#la-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#la-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Beverly Hills
+
+  fetchWeatherBeverlyHills: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherBhc(data));
+  },
+
+  displayWeatherBhc: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#bhc-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#bhc-desc").innerHTML = description;
+    document.querySelector("#bhc-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#bhc-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#bhc-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
   },
 };
-weather.fetchWeather("Scottsdale");
+weather.fetchWeatherScottsdale("Scottsdale");
+weather.fetchWeatherLosAngeles("Los Angeles");
+weather.fetchWeatherBeverlyHills("Beverly Hills");
