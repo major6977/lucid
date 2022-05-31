@@ -892,10 +892,9 @@ html {
   visibility: hidden;
 }
 
-/* .icon {
-  height: 50px;
-
-} */
+#bhc-api-icons {
+  margin-top: 17px;
+}
 
 .show {
   display: block;

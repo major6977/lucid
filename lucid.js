@@ -128,7 +128,187 @@ let weather = {
     document.querySelector("#bhc-low").innerHTML =
       " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
   },
+
+  // Seattle
+
+  fetchWeatherSeattleWa: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherSea(data));
+  },
+
+  displayWeatherSea: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#sea-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#sea-desc").innerHTML = description;
+    document.querySelector("#sea-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#sea-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#sea-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Boston
+
+  fetchWeatherBoston: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherBo(data));
+  },
+
+  displayWeatherBo: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#bo-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#bo-desc").innerHTML = description;
+    document.querySelector("#bo-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#bo-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#bo-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Miami
+
+  fetchWeatherMiami: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherMi(data));
+  },
+
+  displayWeatherMi: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#mi-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#mi-desc").innerHTML = description;
+    document.querySelector("#mi-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#mi-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#mi-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Chicago
+
+  fetchWeatherChicago: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherChi(data));
+  },
+
+  displayWeatherChi: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#chi-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#chi-desc").innerHTML = description;
+    document.querySelector("#chi-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#chi-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#chi-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Vancouver, BC
+
+  fetchWeatherVancouver: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherVan(data));
+  },
+
+  displayWeatherVan: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#van-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#van-desc").innerHTML = description;
+    document.querySelector("#van-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#van-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#van-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
+
+  // Toronto, ON
+
+  fetchWeatherToronto: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        city +
+        "&units=imperial&appid=" +
+        this.apiKey
+    )
+      .then((Response) => Response.json())
+      .then((data) => this.displayWeatherOt(data));
+  },
+
+  displayWeatherOt: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, temp_max, temp_min } = data.main;
+
+    document.querySelector("#ot-temp").innerHTML =
+      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+    document.querySelector("#ot-desc").innerHTML = description;
+    document.querySelector("#ot-weather-icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#ot-hi").innerHTML =
+      "hi " + temp_max.toFixed(0) + " <span>&#176 </span>";
+    document.querySelector("#ot-low").innerHTML =
+      " low " + temp_min.toFixed(0) + " <span>&#176 </span>";
+  },
 };
 weather.fetchWeatherScottsdale("Scottsdale");
 weather.fetchWeatherLosAngeles("Los Angeles");
 weather.fetchWeatherBeverlyHills("Beverly Hills");
+weather.fetchWeatherSeattleWa("Seattle");
+weather.fetchWeatherBoston("Boston");
+weather.fetchWeatherMiami("Miami");
+weather.fetchWeatherChicago("Chicago");
+weather.fetchWeatherVancouver("Vancouver");
+weather.fetchWeatherToronto("Toronto");
