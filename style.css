@@ -1265,7 +1265,6 @@ html {
 
   #blk-car-img {
     position: relative;
-    /* width: 100%; */
     max-width: 40vw;
     left: 48%;
   }
@@ -1300,5 +1299,11 @@ html {
 @media (max-width: 1024px) {
   .all9-imgs {
     width: 40vw;
+  }
+  #blk-car-img {
+    position: relative;
+    max-width: 40vw;
+    height: 20px;
+    left: 48%;
   }
 }
