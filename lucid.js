@@ -312,3 +312,13 @@ weather.fetchWeatherMiami("Miami");
 weather.fetchWeatherChicago("Chicago");
 weather.fetchWeatherVancouver("Vancouver");
 weather.fetchWeatherToronto("Toronto");
+
+// Maps Locations API
+
+function sctMapApi() {
+  let options = {
+    zoom: 8,
+    center: { lat: 33.50259, lng: -111.92917 },
+  };
+  let map = new google.maps.Map(document.getElementById("sctMapApi"), options);
+}

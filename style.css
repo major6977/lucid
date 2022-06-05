@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,6 +17,10 @@ html {
   --xxsmall-font: 0.75rem;
   --gold-text: #b9aa88;
   --white-text: white;
+}
+
+body {
+  background-color: #e4e9ed;
 }
 
 /* Background Image */
