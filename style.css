@@ -895,6 +895,11 @@ body {
   align-items: center;
 }
 
+/* .weathers-icons {
+  height: 30px;
+  width: 30px;
+} */
+
 .hidden {
   visibility: hidden;
 }
@@ -926,6 +931,7 @@ body {
 #location-photos-cont {
   padding-bottom: 40px;
   width: 100vw;
+  background-color: #161617;
 }
 
 .all-locations-imgs-cont {
@@ -942,7 +948,6 @@ body {
 .locations-info {
   color: var(--gold-text);
   height: 600px;
-  background-color: orangered;
 }
 
 .locations-info h3 {
@@ -1040,6 +1045,48 @@ body {
   }
 }
 
+/* Media Query 425 */
+
+@media (max-width: 425px) {
+  .dropdown {
+    width: 25vw;
+  }
+
+  .locations-info {
+    width: 100vw;
+  }
+  .locations-info > img {
+    width: 100vw;
+  }
+  .three-locations-img-cont {
+    width: 100vw;
+    gap: 0;
+    justify-content: start;
+  }
+  .locations-info h3 {
+    width: 100%;
+    padding: 10px;
+  }
+  .locations-info a {
+    display: inline-block;
+    padding: 10px;
+  }
+  .weather-api {
+    margin-left: 10px;
+  }
+  .weather-api + div {
+    margin-left: 10px;
+  }
+
+  #sec4-sign-up-h3 {
+    padding-top: 20vh;
+  }
+
+  #sec4-input-cont {
+    margin-top: 20vh;
+  }
+}
+
 /* Media Query at 500 for Hamburger Menu */
 
 @media (max-width: 500px) {
@@ -1131,6 +1178,13 @@ body {
   #features-sec5-cont {
     height: 1700px !important;
   }
+
+  .locations-info {
+    max-width: 310px;
+  }
+  .locations-info div span {
+    color: #fff;
+  }
 }
 
 /* Media Query at 930px */
@@ -1201,10 +1255,7 @@ body {
   }
 
   #section4-img-cont {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    display: none;
   }
   #features-sec5-img1-cont {
     display: block;
@@ -1301,10 +1352,30 @@ body {
   #sec4-sign-up-cont h3 {
     padding: 20px;
   }
+
+  #sec4-sign-up-h3 {
+    padding-top: 20vh;
+  }
+
+  #sec4-input-cont {
+    margin-top: 20vh;
+  }
 }
 
 @media (max-width: 1024px) {
   .all9-imgs {
     width: 40vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .locations-info {
+    height: 650px !important;
+  }
+}
+
+@media (max-width: 2560px) {
+  .locations-info {
+    height: 950px;
   }
 }
