@@ -61,7 +61,7 @@ let weather = {
     // Scottsdale, AZ
 
     document.querySelector(".sct-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp" + temp.toFixed(0) + " <span>&#176 f</span>";
     document.querySelector("#sct-desc").innerHTML = description;
     document.querySelector("#sct-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -304,14 +304,14 @@ let weather = {
   },
 };
 weather.fetchWeatherScottsdale("Scottsdale");
-weather.fetchWeatherLosAngeles("Los Angeles");
-weather.fetchWeatherBeverlyHills("Beverly Hills");
-weather.fetchWeatherSeattleWa("Seattle");
-weather.fetchWeatherBoston("Boston");
-weather.fetchWeatherMiami("Miami");
-weather.fetchWeatherChicago("Chicago");
-weather.fetchWeatherVancouver("Vancouver");
-weather.fetchWeatherToronto("Toronto");
+// weather.fetchWeatherLosAngeles("Los Angeles");
+// weather.fetchWeatherBeverlyHills("Beverly Hills");
+// weather.fetchWeatherSeattleWa("Seattle");
+// weather.fetchWeatherBoston("Boston");
+// weather.fetchWeatherMiami("Miami");
+// weather.fetchWeatherChicago("Chicago");
+// weather.fetchWeatherVancouver("Vancouver");
+// weather.fetchWeatherToronto("Toronto");
 
 // Maps Locations API
 
@@ -322,3 +322,68 @@ function sctMapApi() {
   };
   let map = new google.maps.Map(document.getElementById("sctMapApi"), options);
 }
+
+// function laMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 34.058601, lng: -118.418999 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("laMapApi"), options);
+// }
+
+// function bhcMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 34.067, lng: -118.418999 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("bhcMapApi"), options);
+// }
+// function seaMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 47.57273, lng: -122.32193 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("seaMapApi"), options);
+// }
+
+// function boMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 42.35114, lng: -71.04438 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("boMapApi"), options);
+// }
+
+// function miMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 25.76708, lng: -80.1931 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("miMapApi"), options);
+// }
+
+// function chiMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 41.90635, lng: -87.65544 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("chiMapApi"), options);
+// }
+
+// function vanMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 49.28339, lng: -123.11794 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("vanMapApi"), options);
+// }
+
+// function otMapApi() {
+//   let options = {
+//     zoom: 8,
+//     center: { lat: 43.72598, lng: -79.45241 },
+//   };
+//   let map = new google.maps.Map(document.getElementById("otMapApi"), options);
+// }
+
+// fetch("https://cors-demo.glitch.me/allow-cors", { mode: "cors" });

@@ -125,11 +125,12 @@
                 <span id="sct-desc"></span>
                 <img  class="icon weathers-icons" id="sct-weather-icon" src="" alt="">
                 
-                <div id="sctMapApi" style="height: 200px; width: 200px;"></div> 
+                
               </div>
               <div> 
               <span id="sct-hi"></span><span class="hidden">f</span><span id="sct-low"></span>
               </div>
+              <div class="all-maps-api" id="sctMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
 
             <!-- Los Angeles -->
@@ -156,12 +157,13 @@
               <div> 
               <span id="la-hi"></span><span class="hidden">f</span><span id="la-low"></span>
               </div>
+               <div class="all-maps-api" id="laMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
 
             <!-- Beverly Hills -->
 
             <div class="locations-info" id="bhc">
-              <img
+              <img id="bhc-pic"
               
                 class="all9-imgs"
                 src="images/lucid-locations-beverly-hills.png"
@@ -169,7 +171,7 @@
               />
               <h3>
                 Beverly Hills SERVICE CENTER 9022 Wilshire Blvd Beverly Hills,
-                CA 90211
+                <br> CA 90211
               </h3>
               <a href="tel:+(14242847999)"> 1 (424) 284-7999</a>
               
@@ -183,7 +185,7 @@
               <div> 
               <span id="bhc-hi"></span><span class="hidden">f</span><span id="bhc-low"></span>
               </div>
-            
+               <div class="all-maps-api" id="bhcMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
 
             <!-- Seattle, WA -->
@@ -211,6 +213,7 @@
               <div>  
                  <span id="sea-hi"></span><span class="hidden">f</span><span id="sea-low"></span>
                </div> 
+                <div class="all-maps-api" id="seaMapApi" style="height: 200px; width: 200px;"></div> 
               </div> 
 
               <!-- Boston, MA -->
@@ -236,7 +239,7 @@
               <div> 
               <span id="bo-hi"></span><span class="hidden">f</span><span id="bo-low"></span>
               </div>
-             
+              <div class="all-maps-api" id="boMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
 
             <!-- Miami, FL -->
@@ -263,6 +266,7 @@
               <div> 
               <span id="mi-hi"></span><span class="hidden">f</span><span id="mi-low"></span>
               </div>
+               <div class="all-maps-api" id="miMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
          
             <!-- Chicago, IL -->
@@ -289,6 +293,7 @@
               <div> 
                <span id="chi-hi"></span><span class="hidden">f</span><span id="chi-low"></span>
                </div>
+                <div class="all-maps-api" id="chiMapApi" style="height: 200px; width: 200px;"></div> 
                </div>
 
                <!-- Vancouver, BC -->
@@ -315,6 +320,7 @@
               <div> 
               <span id="van-hi"></span><span class="hidden">f</span><span id="van-low"></span>
               </div>
+               <div class="all-maps-api" id="vanMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
 
             <!-- Onterio, BC -->
@@ -340,7 +346,7 @@
               <div> 
               <span id="ot-hi"></span><span class="hidden">f</span><span id="ot-low"></span>
               </div>
-              
+               <div class="all-maps-api" id="otMapApi" style="height: 200px; width: 200px;"></div> 
             </div>
           </div>
         </div>
@@ -365,5 +371,14 @@
     </div>
     <script src="lucid.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=sctMapApi"></script> 
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=laMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=bhcMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=seaMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=boMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=miMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=chiMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=vanMapApi"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzJFavvLciyugbB5iC5wS_tI0m2V30vU4&callback=otMapApi"></script> 
+     -->
   </body>
 </html>

@@ -21,6 +21,7 @@ html {
 
 body {
   background-color: #e4e9ed;
+  overflow-x: hidden;
 }
 
 /* Background Image */
@@ -929,14 +930,16 @@ body {
 /* Lucid Locations Infomation */
 
 #location-photos-cont {
-  padding-bottom: 40px;
-  width: 100vw;
+  padding-bottom: 120px;
+  /* width: 100vw; */
+  overflow: hidden;
   background-color: #161617;
 }
 
 .all-locations-imgs-cont {
   width: 90%;
   margin: 0 auto;
+  overflow: auto;
 }
 
 .all9-imgs {
@@ -945,9 +948,13 @@ body {
   width: 27vw;
 }
 
+/* #bhcMapApi {
+  margin-top: 20px;
+} */
+
 .locations-info {
   color: var(--gold-text);
-  height: 600px;
+  /* height: 600px; */
 }
 
 .locations-info h3 {
@@ -964,19 +971,12 @@ body {
   flex-wrap: wrap;
   justify-content: end;
   gap: 10px;
+  overflow: auto;
 }
 
-/* .second3-locations-img-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
-/* .final3-locations-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
+.all-maps-api {
+  margin-top: 10px;
+}
 
 .mobile-header {
   display: none;
@@ -1054,6 +1054,7 @@ body {
 
   .locations-info {
     width: 100vw;
+    overflow: auto;
   }
   .locations-info > img {
     width: 100vw;
@@ -1180,7 +1181,7 @@ body {
   }
 
   .locations-info {
-    max-width: 310px;
+    /* max-width: 310px; */
   }
   .locations-info div span {
     color: #fff;
@@ -1370,12 +1371,12 @@ body {
 
 @media (max-width: 1440px) {
   .locations-info {
-    height: 650px !important;
+    /* height: 650px !important; */
   }
 }
 
 @media (max-width: 2560px) {
   .locations-info {
-    height: 950px;
+    /* height: 950px; */
   }
 }
