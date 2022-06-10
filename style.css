@@ -978,9 +978,9 @@ body {
   margin-top: 10px;
 }
 
-.mobile-header {
+/* .mobile-header {
   display: none;
-}
+} */
 
 /* Media Query 414 */
 
@@ -1094,16 +1094,16 @@ body {
   #header {
     display: none;
   }
-  .mobile-header {
+  /* .mobile-header {
     display: block;
     max-width: 500px;
     margin: auto;
     background-color: #161617;
     transition: all 2s;
     color: white;
-  }
+  } */
 
-  .topnav {
+  /* .topnav {
     overflow: hidden;
     background-color: #161617;
     position: relative;
@@ -1111,43 +1111,88 @@ body {
   .topnav-index-page {
     /* overflow: hidden;
     background-color: #161617;
-    position: relative; */
+    position: relative; 
     top: 30px;
-  }
+  /* }
 
   .topnav #my-links {
     display: none;
-  }
+  } */
 
-  .topnav a {
+  /* .topnav a {
     color: #b9aa88;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
+  } */
 
-  .topnav a:hover {
+  /* .topnav a:hover {
     background-color: #fff;
     color: #161617;
     transition: all 1s;
-  }
+  } */
 
-  .topnav a.icon {
+  /* .topnav a.icon {
     background: #161617;
     color: #b9aa88;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+  }  */
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
   }
 
   .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  /* .active {
     background-color: #161617;
     color: #fff;
     display: inline-block;
     padding-top: 50px;
-  }
+  } */
 }
 
 /* Media Query 768 */

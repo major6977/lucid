@@ -7,17 +7,26 @@ $(window).scroll(function () {
 
 // Hamburger Bar Menu
 
-function myFunction() {
-  var x = document.getElementById("my-links");
-  var mobileHeader = document.querySelector(".mobile-header");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    mobileHeader.style.height = "40px";
-  } else {
-    x.style.display = "block";
-    mobileHeader.style.height = "250px";
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("my-links");
+//   var mobileHeader = document.querySelector(".mobile-header");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//     mobileHeader.style.height = "40px";
+//   } else {
+//     x.style.display = "block";
+//     mobileHeader.style.height = "250px";
+//   }
+// }
+
+// function myHamburger() {
+//   let x = document.getElementById("myLinks");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 
 // Button Function
 
@@ -60,7 +69,7 @@ let weather = {
 
     // Scottsdale, AZ
 
-    document.querySelector(".sct-temp").innerHTML =
+    document.getElementById("sct-temp").innerHTML =
       "Temp" + temp.toFixed(0) + " <span>&#176 f</span>";
     document.querySelector("#sct-desc").innerHTML = description;
     document.querySelector("#sct-weather-icon").src =

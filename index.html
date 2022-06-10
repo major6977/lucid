@@ -13,12 +13,11 @@
     ></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="hamburger.js"></script>
+    <script defer src="lucid.js"></script>
   </head>
   <body>
     <div id="main-cont">
@@ -41,7 +40,7 @@
         </nav>
       </section>
       <section class="mobile-header">
-        <div class="topnav topnav-index-page">
+        <div class="topnav">
           <a href="index.html" class="active">Logo</a>
           <div id="my-links">
             <a href="index.html">LUCID AIR</a>
@@ -49,11 +48,29 @@
             <a href="contact.html">CONTACT</a>
             <a href="#sec4-input-cont">STAY UPDATED</a>
           </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="myHamburger()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
       </section>
+
+      <!-- Simulate a smartphone / tablet -->
+
+      <!-- <div class="mobile-container">  -->
+
+      <!-- Top Navigation Menu -->
+      <!-- <div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myHamburger()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> -->
+
       <section id="header2">
         <h1>Lucid Air</h1>
         <div id="buttons-cont">
@@ -252,6 +269,7 @@
         </div>
       </div>
     </section>
-    <script src="lucid.js"></script>
+    <!-- <script src="hamburger.js"></script>
+    <script src="lucid.js"></script> -->
   </body>
 </html>
