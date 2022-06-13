@@ -7,6 +7,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
 /* Veriable Font Sizes */
 
 :root {
@@ -77,6 +86,10 @@ body {
   background-color: white;
   color: black;
   padding: 5px 7px;
+}
+
+.topnav {
+  display: none;
 }
 
 #stay-updated {
@@ -982,298 +995,11 @@ body {
   display: none;
 }
 
-/* .mobile-header {
-  display: none;
-} */
+/* Media Query 1024 */
 
-/* Media Query 414 */
-
-@media (max-width: 414px) {
-  #header {
-    display: none;
-  }
-  #header3 div h3 {
-    font-size: 15px;
-  }
-
-  #white-car {
-    width: 90vw;
-  }
-
-  #header3 div h1 {
-    margin: 0 auto;
-    padding-bottom: 15px;
-  }
-  .overlay {
-    height: 46px;
-    width: 100vw;
-    bottom: 10px;
-    margin-bottom: 0;
-  }
-  #parallax-bkg-img {
-    background-attachment: scroll;
-  }
-
-  #features-sec2 {
-    bottom: 15vh !important;
-  }
-
-  #features-sec4-h3-cont {
-    position: relative;
-    bottom: 10%;
-  }
-  #features-sec5-cont {
-    height: 1000px;
-  }
-
-  #contact-sec2-cont {
-    height: 25vh;
-  }
-
-  #city-states {
-    width: 60%;
-  }
-
-  .first3-locations-img-cont,
-  .second3-locations-img-cont,
-  .final3-locations-cont {
-    display: block;
-  }
-
+@media (max-width: 1024px) {
   .all9-imgs {
-    width: 100%;
-  }
-
-  .locations-info h3 {
-    width: 100%;
-  }
-}
-
-/* Media Query 425 */
-
-@media (max-width: 425px) {
-  .dropdown {
-    width: 25vw;
-  }
-
-  .locations-info {
-    width: 100vw;
-    overflow: auto;
-  }
-  .locations-info > img {
-    width: 100vw;
-  }
-  .three-locations-img-cont {
-    width: 100vw;
-    gap: 0;
-    justify-content: start;
-  }
-  .locations-info h3 {
-    width: 100%;
-    padding: 10px;
-  }
-  .locations-info a {
-    display: inline-block;
-    padding: 10px;
-  }
-  .weather-api {
-    margin-left: 10px;
-  }
-  .weather-api + div {
-    margin-left: 10px;
-  }
-
-  #sec4-sign-up-h3 {
-    padding-top: 20vh;
-  }
-
-  #sec4-input-cont {
-    margin-top: 20vh;
-  }
-}
-
-/* Media Query at 500 for Hamburger Menu */
-
-@media (max-width: 500px) {
-  #header {
-    display: none;
-  }
-
-  #contact-mobile-head {
-    position: relative;
-    top: -40px;
-  }
-
-  #contact-sec2-cont {
-    margin-top: -40px;
-  }
-  /* .mobile-header {
-    display: block;
-    max-width: 500px;
-    margin: auto;
-    background-color: #161617;
-    transition: all 2s;
-    color: white;
-  } */
-
-  /* .topnav {
-    overflow: hidden;
-    background-color: #161617;
-    position: relative;
-  }
-  .topnav-index-page {
-    /* overflow: hidden;
-    background-color: #161617;
-    position: relative; 
-    top: 30px;
-  /* }
-
-  .topnav #my-links {
-    display: none;
-  } */
-
-  /* .topnav a {
-    color: #b9aa88;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  } */
-
-  /* .topnav a:hover {
-    background-color: #fff;
-    color: #161617;
-    transition: all 1s;
-  } */
-
-  /* .topnav a.icon {
-    background: #161617;
-    color: #b9aa88;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }  */
-
-  .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
-
-  #features-main-cont {
-    top: -40px;
-  }
-
-  #features-sec3-cont {
-    top: -72px;
-  }
-
-  #features-sec4-cont {
-    top: -72px;
-  }
-
-  #features-sec5-cont {
-    top: -72px;
-  }
-
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    /* position: relative; */
-    margin-top: 40px;
-  }
-
-  .topnav #my-links {
-    display: none;
-  }
-
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-
-  .topnav a.icon {
-    background-color: #161617;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .active {
-    background-color: #161617;
-    color: white;
-  }
-
-  /* .active {
-    background-color: #161617;
-    color: #fff;
-    display: inline-block;
-    padding-top: 50px;
-  } */
-
-  #my-links {
-    display: block;
-  }
-}
-
-/* Media Query 768 */
-
-@media (max-width: 768px) {
-  #features-sec2 {
-    bottom: 14vh;
-  }
-
-  #features-sec4-h3-cont {
-    width: 80%;
-    line-height: 2;
-    bottom: 20%;
-  }
-
-  #info-small-txt-cont p {
-    font-size: 12px;
-    width: 13%;
-  }
-
-  #features-sec3-p1-cont {
-    font-size: 12px;
-    width: 75%;
-  }
-
-  #features-sec5-cont h2 {
-    font-size: x-large;
-  }
-  #features-sec5-cont {
-    height: 1700px !important;
-  }
-
-  .locations-info {
-    /* max-width: 310px; */
-  }
-  .locations-info div span {
-    color: #fff;
-  }
-
-  #features-sec2-info-cont {
-    position: absolute;
-    /* bottom: 10px; */
-  }
-
-  #fade-txt2 {
-    font-size: medium;
-    line-height: 3em;
+    width: 40vw;
   }
 }
 
@@ -1358,7 +1084,6 @@ body {
   #reviews-cont1 {
     width: 75%;
     margin-left: 30%;
-    /* position: relative; */
   }
   #reviews-cont1 p {
     padding-right: 20px;
@@ -1368,9 +1093,6 @@ body {
     float: right;
     margin-left: 20px;
   }
-  /* #reviews-cont2 {
-    width: 65%;
-  } */
 
   #features-sec5-img2-cont {
     display: block;
@@ -1452,20 +1174,267 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+/* Media Query 768 */
+
+@media (max-width: 768px) {
+  #features-sec2 {
+    bottom: 14vh;
+  }
+
+  #features-sec4-h3-cont {
+    width: 80%;
+    line-height: 2;
+    bottom: 20%;
+  }
+
+  #info-small-txt-cont p {
+    font-size: 12px;
+    width: 13%;
+  }
+
+  #features-sec3-p1-cont {
+    font-size: 12px;
+    width: 75%;
+  }
+
+  #features-sec5-cont h2 {
+    font-size: x-large;
+  }
+  #features-sec5-cont {
+    height: 1700px !important;
+  }
+
+  .locations-info {
+    /* max-width: 310px; */
+  }
+  .locations-info div span {
+    color: #fff;
+  }
+
+  #features-sec2-info-cont {
+    position: absolute;
+    /* bottom: 10px; */
+  }
+
+  #fade-txt2 {
+    font-size: medium;
+    line-height: 3em;
+  }
+}
+
+/* Media Query at 500 for Hamburger Menu */
+
+@media (max-width: 500px) {
+  #header {
+    display: none;
+  }
+
+  #contact-mobile-head {
+    position: relative;
+    top: -40px;
+  }
+
+  #contact-sec2-cont {
+    margin-top: -40px;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  #features-main-cont {
+    top: -40px;
+  }
+
+  #features-sec3-cont {
+    top: -72px;
+  }
+
+  #features-sec3-p2-cont p {
+    width: 25%;
+    font-size: small;
+  }
+
+  #features-sec4-cont {
+    top: -72px;
+  }
+
+  #features-sec5-cont {
+    top: -72px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    /* position: relative; */
+    margin-top: 40px;
+  }
+
+  .topnav #my-links {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background-color: #161617;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #161617;
+    color: white;
+  }
+
+  #my-links {
+    display: block;
+  }
+
+  #reviews-cont1 {
+    margin-left: 25%;
+  }
+  #reviews-cont1 img,
+  #reviews-cont2 img,
+  #reviews-cont3 img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* Media Query 425 */
+
+@media (max-width: 425px) {
+  .dropdown {
+    width: 25vw;
+  }
+
+  .locations-info {
+    width: 100vw;
+    overflow: auto;
+  }
+  .locations-info > img {
+    width: 100vw;
+  }
+  .three-locations-img-cont {
+    width: 100vw;
+    gap: 0;
+    justify-content: start;
+  }
+  .locations-info h3 {
+    width: 100%;
+    padding: 10px;
+  }
+  .locations-info a {
+    display: inline-block;
+    padding: 10px;
+  }
+  .weather-api {
+    margin-left: 10px;
+  }
+  .weather-api + div {
+    margin-left: 10px;
+  }
+
+  #sec4-sign-up-h3 {
+    padding-top: 20vh;
+  }
+
+  #sec4-input-cont {
+    margin-top: 20vh;
+  }
+
+  #fade-txt2 {
+    line-height: 2.5em !important;
+    margin-top: 15%;
+  }
+}
+
+/* Media Query 414 */
+
+@media (max-width: 414px) {
+  #header {
+    display: none;
+  }
+  #header3 div h3 {
+    font-size: 15px;
+  }
+
+  #white-car {
+    width: 90vw;
+  }
+
+  #header3 div h1 {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+
+  #fade-txt2 {
+    display: none;
+  }
+  .overlay {
+    height: 46px;
+    width: 100vw;
+    bottom: 10px;
+    margin-bottom: 0;
+  }
+  #parallax-bkg-img {
+    background-attachment: scroll;
+  }
+
+  #features-sec2 {
+    bottom: 15vh !important;
+  }
+
+  #features-sec4-h3-cont {
+    position: relative;
+    bottom: 10%;
+  }
+  #features-sec5-cont {
+    height: 1000px;
+  }
+
+  #contact-sec2-cont {
+    height: 25vh;
+  }
+
+  #city-states {
+    width: 60%;
+  }
+
+  .first3-locations-img-cont,
+  .second3-locations-img-cont,
+  .final3-locations-cont {
+    display: block;
+  }
+
   .all9-imgs {
-    width: 40vw;
+    width: 100%;
   }
-}
 
-@media (max-width: 1440px) {
-  .locations-info {
-    /* height: 650px !important; */
-  }
-}
-
-@media (max-width: 2560px) {
-  .locations-info {
-    /* height: 950px; */
+  .locations-info h3 {
+    width: 100%;
   }
 }
