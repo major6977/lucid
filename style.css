@@ -874,7 +874,7 @@ body {
 .dropdown {
   position: fixed;
   display: inline-block;
-  width: 13vw;
+  width: 12vw;
 }
 
 .dropdown-content {
