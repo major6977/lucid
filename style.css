@@ -909,17 +909,8 @@ body {
   align-items: center;
 }
 
-/* .weathers-icons {
-  height: 30px;
-  width: 30px;
-} */
-
 .hidden {
   visibility: hidden;
-}
-
-#bhc-api-icons {
-  /* margin-top: 17px; */
 }
 
 .show {
@@ -961,9 +952,9 @@ body {
   width: 27vw;
 }
 
-/* #bhcMapApi {
-  margin-top: 20px;
-} */
+#sct img {
+  margin-bottom: 2px;
+}
 
 .locations-info {
   color: var(--gold-text);
@@ -972,6 +963,7 @@ body {
 
 .locations-info h3 {
   width: 27vw;
+  height: 17vh;
 }
 
 .locations-info a {
@@ -1322,18 +1314,35 @@ body {
     height: 150px;
     width: 150px;
   }
+
+  .all9-imgs {
+    width: 90vw;
+  }
+
+  .locations-info h3 {
+    width: 100%;
+  }
+  .dropdown {
+    position: fixed;
+    display: inline-block;
+    width: 19vw;
+  }
 }
 
 /* Media Query 425 */
 
 @media (max-width: 425px) {
   .dropdown {
-    width: 25vw;
+    width: 28vw;
   }
 
   .locations-info {
     width: 100vw;
     overflow: auto;
+  }
+  .all-locations-imgs-cont {
+    margin: 0;
+    overflow: hidden;
   }
   .locations-info > img {
     width: 100vw;
@@ -1369,6 +1378,14 @@ body {
   #fade-txt2 {
     line-height: 2.5em !important;
     margin-top: 15%;
+  }
+
+  #lucid-pg2-text {
+    display: none;
+  }
+
+  .all-maps-api {
+    margin: 10px 0 0 10px;
   }
 }
 
