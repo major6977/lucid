@@ -987,6 +987,103 @@ body {
   display: none;
 }
 
+/* Media Query 2560 */
+
+@media (min-width: 2560px) {
+  #reviews-cont1 {
+    font-size: xxx-large;
+  }
+
+  #reviews-cont1 img {
+    width: 550px;
+    height: 550px;
+    padding-left: 5px;
+  }
+  #reviews-cont2 {
+    font-size: xxx-large;
+    width: 40%;
+  }
+
+  #reviews-cont2 img {
+    width: 550px;
+    height: 550px;
+    padding-left: 5px;
+  }
+  #reviews-cont3 {
+    font-size: xxx-large;
+  }
+
+  #reviews-cont3 img {
+    width: 550px;
+    height: 550px;
+    padding-left: 5px;
+  }
+
+  #blk-car-img {
+    max-width: 60%;
+    width: 60%;
+  }
+  #sec4-sign-up-cont h3 {
+    font-size: 4em;
+  }
+
+  #e-mail-input {
+    font-size: xxx-large;
+  }
+
+  #sec4-submit-btn {
+    font-size: xx-large;
+  }
+
+  .fade-txt3 {
+    font-size: 60px;
+    line-height: 3em;
+  }
+
+  #features-sec3-button {
+    font-size: 3em;
+  }
+
+  #features-sec3-p2-cont {
+    font-size: 1vw;
+  }
+
+  #header2 h1 {
+    padding-top: 130px;
+  }
+
+  #card-flip-cont {
+    width: 300px;
+  }
+  .discover-btn {
+    font-size: 30px;
+  }
+
+  .reserve-btn {
+    font-size: 30px;
+  }
+  .reserve-btn {
+    width: 300px;
+    font-size: 30px;
+  }
+
+  #reserve-btn-cont {
+    bottom: 20px;
+  }
+
+  #header2 h1 {
+    padding-top: 50px;
+  }
+
+  .overlay {
+    height: 20vh;
+  }
+
+  #lucid-pg2-text p {
+    font-size: 60px;
+    line-height: 3em;
+  }
+}
 /* Media Query 1024 */
 
 @media (max-width: 1024px) {

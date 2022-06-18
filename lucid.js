@@ -3,6 +3,8 @@
 $(window).scroll(function () {
   $("#fade-txt1").css("opacity", 1.7 - $(window).scrollTop() / 500);
   $("#fade-txt2").css("opacity", 1.7 - $(window).scrollTop() / 800);
+  $(".fade-txt3").css("opacity", 1.7 - $(window).scrollTop() / 2100);
+  $(".fade-txt-index-pg").css("opacity", 1.7 - $(window).scrollTop() / 1900);
 });
 
 // Hamburger Bar Menu
@@ -49,6 +51,8 @@ window.onclick = function (event) {
 
 // Weather API
 
+// Scottsdale
+
 let weather = {
   apiKey: "38564753ed038f14cb4ef6819ad2f457",
   fetchWeatherScottsdale: function (city) {
@@ -67,10 +71,8 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, temp_max, temp_min } = data.main;
 
-    // Scottsdale, AZ
-
     document.getElementById("sct-temp").innerHTML =
-      "Temp " + temp.toFixed(0) + " <span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span> ";
     document.querySelector("#sct-desc").innerHTML = description;
     document.querySelector("#sct-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -99,7 +101,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#la-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#la-desc").innerHTML = description;
     document.querySelector("#la-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -128,7 +130,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#bhc-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#bhc-desc").innerHTML = description;
     document.querySelector("#bhc-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -157,7 +159,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#sea-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#sea-desc").innerHTML = description;
     document.querySelector("#sea-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -186,7 +188,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#bo-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#bo-desc").innerHTML = description;
     document.querySelector("#bo-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -215,7 +217,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#mi-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#mi-desc").innerHTML = description;
     document.querySelector("#mi-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -244,7 +246,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#chi-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#chi-desc").innerHTML = description;
     document.querySelector("#chi-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -273,7 +275,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#van-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#van-desc").innerHTML = description;
     document.querySelector("#van-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -302,7 +304,7 @@ let weather = {
     const { temp, temp_max, temp_min } = data.main;
 
     document.querySelector("#ot-temp").innerHTML =
-      "Temp: " + temp.toFixed(0) + "<span>&#176 f</span>";
+      "Temp: " + temp.toFixed(0) + "<span>&#176 </span>";
     document.querySelector("#ot-desc").innerHTML = description;
     document.querySelector("#ot-weather-icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
