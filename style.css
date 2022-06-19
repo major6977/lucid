@@ -11,6 +11,7 @@ html {
 html,
 body {
   overflow-x: hidden;
+  max-width: 2560px;
 }
 
 body {
@@ -128,7 +129,7 @@ body {
 
 #header2 h1 {
   margin: 0 auto 2vh auto;
-  /* padding-top: 130px; */
+  padding-top: 130px;
   text-align: center;
   font-family: serif;
   font-size: 4vw;
@@ -265,7 +266,7 @@ body {
   text-align: center;
   z-index: 4;
   color: var(--white-text);
-  padding-bottom: 15px;
+  padding: 10px 0 15px 0;
 }
 
 /* PAGE 2 */
@@ -649,10 +650,20 @@ body {
 }
 
 #features-sec3-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #161617;
+  font-size: large;
   width: 30vw;
   height: 7vh;
   border: none;
+  background-color: white;
 }
+
 #features-sec3-button:hover {
   cursor: pointer;
   background-color: #572f27;
@@ -1049,7 +1060,7 @@ body {
   }
 
   #header2 h1 {
-    padding-top: 130px;
+    padding-top: 90px;
   }
 
   #card-flip-cont {
@@ -1069,10 +1080,6 @@ body {
 
   #reserve-btn-cont {
     bottom: 20px;
-  }
-
-  #header2 h1 {
-    padding-top: 50px;
   }
 
   .overlay {
