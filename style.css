@@ -485,7 +485,7 @@ body {
 #sec4-sign-up-cont {
   display: flex;
   width: 100vw;
-  height: 50vh;
+  height: 95vh;
 }
 
 #sec4-sign-up-h3 {
@@ -512,9 +512,9 @@ body {
 
 #e-mail-input {
   font-size: large;
-  height: 10vh;
+  height: 5vh;
   width: 30vw;
-  padding-left: 20px;
+  padding-left: 5px;
   padding-right: 40p;
 }
 
@@ -705,9 +705,9 @@ body {
   color: var(--white-text);
   transform: translateX(-50%);
   left: 50%;
-  bottom: 20%;
+  bottom: 10%;
   width: 75%;
-  line-height: 2.5em;
+  line-height: 2.2em;
   font-size: x-large;
 }
 
@@ -1211,13 +1211,13 @@ body {
 
   #sec4-input-cont {
     width: 100%;
-    height: 50vh;
+    height: 15vh;
     display: block;
     margin-left: 20%;
   }
 
   #reviews-cont2 {
-    width: 75%;
+    width: 90%;
   }
   #interior {
     width: 90%;
@@ -1231,8 +1231,8 @@ body {
 
   #blk-car-img {
     position: relative;
-    max-width: 40vw;
-    left: 48%;
+    width: 80vw;
+    /* left: 48%; */
   }
 
   #jeffery-img {
@@ -1240,7 +1240,7 @@ body {
     margin-right: 20px;
   }
   #reviews-cont3 {
-    width: 75%;
+    width: 90%;
     margin-top: 30px;
     margin-left: 0;
     text-align: left;
@@ -1262,11 +1262,11 @@ body {
   }
 
   #sec4-sign-up-h3 {
-    padding-top: 20vh;
+    padding-top: 5vh;
   }
 
   #sec4-input-cont {
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 }
 
@@ -1472,7 +1472,7 @@ body {
   }
 
   #sec4-sign-up-h3 {
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
   }
 
   #sec4-input-cont {
@@ -1557,5 +1557,12 @@ body {
 
   .locations-info h3 {
     width: 100%;
+  }
+
+  #sec4-input-cont {
+    margin-top: 5vh;
+  }
+  #sec4-sign-up-h3 {
+    padding-top: 0;
   }
 }
